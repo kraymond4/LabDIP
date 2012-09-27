@@ -13,7 +13,7 @@ public abstract class Employee
 {
     // You gotta question if these are appropriate for ALL employees?
     
-    private double totalAnnualWage;
+    
     
     
     //private double hourlyRate;
@@ -27,7 +27,7 @@ public abstract class Employee
     public abstract double getTotalAnnualWage();
     
     
-    public abstract void determineTotalAnnualWage();
+    
     
     /**
      * Returns annual wages for hourly workers. Is this polymorphic?

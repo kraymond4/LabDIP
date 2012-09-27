@@ -10,6 +10,9 @@ package dip.lab1.student.solution1;
  */
 public class SalariedEmployee extends Employee 
 {
+    
+    private double annualSalary;
+    private double annualBonus;
 
     /** default constructor. Is this the best way to go? */
     public SalariedEmployee() {}
@@ -24,6 +27,35 @@ public class SalariedEmployee extends Employee
         setAnnualSalary(annualSalary);
         setAnnualBonus(annualBonus);
     }
+    
+    public double getAnnualBonus() 
+    {
+        return annualBonus;
+    }
+     
+    public void setAnnualBonus(double annualBonus) 
+    {
+        this.annualBonus = annualBonus;
+    }
+    
+    public double getAnnualSalary() 
+    {
+        return annualSalary;
+    }
+    
+    public void setAnnualSalary(double annualSalary) 
+    {
+        this.annualSalary = annualSalary;
+    }
+     
+
+    @Override
+    public double getTotalAnnualWage() 
+    {
+        return this.annualBonus + this.annualSalary;
+    }
+
+    
 
     
 }
