@@ -18,10 +18,7 @@ public class FoodServiceTipCalculatorStrategy implements TipCalculatorStrategy
     private static final double POOR_RATE = 0.10;
 
     private double bill;
-    public enum ServiceQuality 
-    {
-        GOOD, FAIR, POOR
-    }
+    
     private ServiceQuality serviceQuality;
 
     public FoodServiceTipCalculatorStrategy(ServiceQuality q, double billAmt) 

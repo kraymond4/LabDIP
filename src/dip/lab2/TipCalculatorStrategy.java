@@ -11,7 +11,7 @@ package dip.lab2;
 public interface TipCalculatorStrategy 
 {
     
-    public enum ServiceQuality 
+    public static enum ServiceQuality 
     {
         GOOD, FAIR, POOR
     }
