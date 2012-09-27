@@ -52,7 +52,7 @@ public class SalariedEmployee extends Employee
     @Override
     public final double getTotalAnnualWage() 
     {
-        return this.annualBonus + this.annualSalary;
+        return getAnnualBonus() + getAnnualSalary();
     }
 
     
