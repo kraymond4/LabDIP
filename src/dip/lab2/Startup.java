@@ -20,14 +20,14 @@ import javax.swing.JOptionPane;
  */
 public class Startup 
 {
-    public static enum ServiceQuality 
+    public enum ServiceQuality 
     {
            GOOD, FAIR, POOR
     };
  
     public static void main(String[] args) 
     {
-        
+        BaggageServiceTipCalculatorStategy baggagehandler1 = new BaggageServiceTipCalculatorStrategy(ServiceQuality.FAIR,3);
         
         
     }
