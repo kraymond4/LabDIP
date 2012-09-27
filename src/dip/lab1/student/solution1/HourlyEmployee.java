@@ -11,6 +11,9 @@ package dip.lab1.student.solution1;
 public class HourlyEmployee extends Employee 
 {
     
+    private double hourlyRate;
+    private double totalHrsForYear;
+    
     /** default constructor. Is this the best way to go? */
     public HourlyEmployee() {}
 
@@ -23,6 +26,32 @@ public class HourlyEmployee extends Employee
     {
         setHourlyRate(hourlyRate);
         setTotalHrsForYear(totalHrsForYear);
+    }
+    
+    public final double getHourlyRate() 
+    {
+        return hourlyRate;
+    }
+    
+    public final void setHourlyRate(double hourlyRate) 
+    {
+        this.hourlyRate = hourlyRate;
+    }
+    
+    public final double getTotalHrsForYear() 
+    {
+        return totalHrsForYear;
+    }
+    
+    public final void setTotalHrsForYear(double totalHrsForYear) 
+    {
+        this.totalHrsForYear = totalHrsForYear;
+    }
+
+    @Override
+    public double getTotalAnnualWage() 
+    {
+        return getHourlyRate() * getTotalHrsForYear();
     }
 
 }
