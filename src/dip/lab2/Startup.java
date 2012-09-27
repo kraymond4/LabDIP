@@ -18,16 +18,17 @@ import javax.swing.JOptionPane;
  * 
  * @author your name goes here
  */
-public class Startup {
-    public static enum ServiceQuality {
+public class Startup 
+{
+    public static enum ServiceQuality 
+    {
            GOOD, FAIR, POOR
     };
  
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         
-        BaggageServiceTipCalculator service =
-                new BaggageServiceTipCalculator(
-                BaggageServiceTipCalculator.ServiceQuality.FAIR,5);
+        
         
     }
 

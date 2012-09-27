@@ -10,6 +10,13 @@ package dip.lab2;
  */
 public interface TipCalculator 
 {
+    
+    public enum ServiceQuality 
+    {
+        GOOD, FAIR, POOR
+    }
+    
+    
     public abstract double getTip();
     
     
