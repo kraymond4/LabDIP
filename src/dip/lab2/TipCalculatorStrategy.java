@@ -8,7 +8,7 @@ package dip.lab2;
  *
  * @author kraymond4
  */
-public interface TipCalculator 
+public interface TipCalculatorStrategy 
 {
     
     public enum ServiceQuality 

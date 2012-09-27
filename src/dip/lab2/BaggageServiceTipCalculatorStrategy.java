@@ -8,7 +8,7 @@ package dip.lab2;
  *
  * @author your name goes here
  */
-public class BaggageServiceTipCalculator implements TipCalculator
+public class BaggageServiceTipCalculatorStrategy implements TipCalculatorStrategy
 {
     
     private static final double GOOD_RATE = 0.20;
@@ -23,7 +23,7 @@ public class BaggageServiceTipCalculator implements TipCalculator
     }
     private ServiceQuality serviceQuality;
 
-    public BaggageServiceTipCalculator(ServiceQuality q, int bags) 
+    public BaggageServiceTipCalculatorStrategy(ServiceQuality q, int bags) 
     {
         this.setServiceRating(q); // perform validation
         this.setBagCount(bags);

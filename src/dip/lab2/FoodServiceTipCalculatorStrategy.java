@@ -8,7 +8,7 @@ package dip.lab2;
  *
  * @author your name goes here
  */
-public class FoodServiceTipCalculator implements TipCalculator
+public class FoodServiceTipCalculatorStrategy implements TipCalculatorStrategy
 {
     private static final double MIN_BILL = 0.00;
     private static final String BILL_ENTRY_ERR =
@@ -24,7 +24,7 @@ public class FoodServiceTipCalculator implements TipCalculator
     }
     private ServiceQuality serviceQuality;
 
-    public FoodServiceTipCalculator(ServiceQuality q, double billAmt) 
+    public FoodServiceTipCalculatorStrategy(ServiceQuality q, double billAmt) 
     {
         this.setServiceRating(q);
         this.setBill(billAmt);
