@@ -24,8 +24,18 @@ public class Startup
  
     public static void main(String[] args) 
     {
-        TipCalculatorStrategy handler1 = new BaggageServiceTipCalculatorStrategy(TipCalculatorStrategy.ServiceQuality.FAIR, 3);
         
+        NumberFormat nf = NumberFormat.getCurrencyInstance();
+        
+        BaggageServiceTipCalculatorStrategy servant1 = new BaggageServiceTipCalculatorStrategy(TipCalculatorStrategy.ServiceQuality.FAIR, 3);
+        FoodServiceTipCalculatorStrategy servant2 = new FoodServiceTipCalculatorStrategy(TipCalculatorStrategy.ServiceQuality.GOOD, 55.00);
+        
+        
+        
+        TipCalculationService tipCalculation = new TipCalculationService();
+        
+        System.out.println("The tip amount for Baggage handling is: " + nf.format(tipCalculation.calculateTip(servant1)));
+        System.out.println("The tip amount for a waiter's service is: " + nf.format(tipCalculation.calculateTip(servant2)));
         
     }
 
