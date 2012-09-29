@@ -10,10 +10,30 @@ package dip.lab3;
  */
 public class MessageService 
 {
-    private ProviderStrategy input = new ConsoleProviderStrategy();
-    private ProviderStrategy input2 = new GUIProviderStrategy();
+    private ProviderStrategy input;
+    
+    private RendererStrategy output;
     
     
-    private RendererStrategy output = new GUIRendererStrategy();
-    private RendererStrategy output2 = new ConsoleRendererStrategy();
+    
+    
+    public void SetProviderStrategy(ProviderStrategy p)
+    {
+        input = p;
+    }
+    
+    public void SetRendererStrategy(RendererStrategy r)
+    {
+        output = r;
+    }
+    
+    
+    
+    public void PerformMessageService()
+    {
+        input.setMessage();
+        output.displayMessage(input.getMessage());
+    }
+    
+    
 }
