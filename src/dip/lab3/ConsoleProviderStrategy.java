@@ -25,7 +25,7 @@ public class ConsoleProviderStrategy implements ProviderStrategy
 
     public String getMessage() 
     {
-        return message;
+        return this.message;
     }
     
 }
