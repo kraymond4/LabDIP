@@ -14,22 +14,26 @@ public class MessageService
     
     private RendererStrategy output;
     
+    public MessageService(ProviderStrategy p, RendererStrategy r)
+    {
+        setProviderStrategy(p);
+        setRendererStrategy(r);
+    }
     
     
-    
-    public void SetProviderStrategy(ProviderStrategy p)
+    public final void setProviderStrategy(ProviderStrategy p)
     {
         input = p;
     }
     
-    public void SetRendererStrategy(RendererStrategy r)
+    public final void setRendererStrategy(RendererStrategy r)
     {
         output = r;
     }
     
     
     
-    public void PerformMessageService()
+    public final void PerformMessageService()
     {
         input.setMessage();
         output.displayMessage(input.getMessage());
