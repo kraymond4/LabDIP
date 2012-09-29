@@ -14,16 +14,13 @@ public class ConsoleProviderStrategy implements ProviderStrategy
     private String message;
     private Scanner keyboard = new Scanner(System.in);
     
-    public ConsoleProviderStrategy()
-    {
-        System.out.println("Enter a message:");
-        setMessage(keyboard.nextLine());
-    }
     
-    public void setMessage(String message) 
+    
+    public void setMessage() 
     {
         //needs validation
-        this.message = message;
+        System.out.println("Enter your message:");
+        this.message = keyboard.nextLine();
     }
 
     public String getMessage() 

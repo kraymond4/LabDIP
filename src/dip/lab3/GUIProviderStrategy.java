@@ -3,22 +3,29 @@
  * and open the template in the editor.
  */
 package dip.lab3;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author Kyle Raymond
  */
 public class GUIProviderStrategy implements ProviderStrategy
 {
-
-    public void setMessage(String message) 
+    private String message;
+    
+    public GUIProviderStrategy()
     {
-        throw new UnsupportedOperationException("Not supported yet.");
+        setMessage();
+    }
+
+    public void setMessage() 
+    {
+        this.message =
+       JOptionPane.showInputDialog(null, "Enter message here:");
     }
 
     public String getMessage() 
     {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return this.message;
     }
     
 }
