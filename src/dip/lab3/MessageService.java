@@ -33,7 +33,7 @@ public class MessageService
     
     
     
-    public final void PerformMessageService()
+    public final void performMessageService()
     {
         input.setMessage();
         output.displayMessage(input.getMessage());
