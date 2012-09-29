@@ -10,5 +10,6 @@ package dip.lab3;
  */
 public class MessageService 
 {
-    
+    private ProviderStrategy input = new ConsoleProviderStrategy();
+    private ProviderStrategy input2 = new GUIProviderStrategy();
 }

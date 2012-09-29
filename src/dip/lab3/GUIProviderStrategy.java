@@ -12,10 +12,7 @@ public class GUIProviderStrategy implements ProviderStrategy
 {
     private String message;
     
-    public GUIProviderStrategy()
-    {
-        setMessage();
-    }
+    
 
     public void setMessage() 
     {
