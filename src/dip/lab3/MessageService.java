@@ -12,4 +12,8 @@ public class MessageService
 {
     private ProviderStrategy input = new ConsoleProviderStrategy();
     private ProviderStrategy input2 = new GUIProviderStrategy();
+    
+    
+    private RendererStrategy output = new GUIRendererStrategy();
+    private RendererStrategy output2 = new ConsoleRendererStrategy();
 }
