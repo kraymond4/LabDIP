@@ -10,7 +10,7 @@ package dip.lab3;
  */
 public interface ProviderStrategy 
 {
-    public abstract void setMessage(String message);
+    public abstract void setMessage();
     
     public abstract String getMessage();
 }
